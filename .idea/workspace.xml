@@ -10,38 +10,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f1c335-3789-4504-9e49-0161fd5659d1" name="Default Changelist" comment="добавил fetch eager&#10;добавил секьюрность userDeatailsService&#10;поправил контроллер с crud на доступ только для админа">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_02.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_9_Final.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/DAO/JpaUserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/DAO/UserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/authController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/authController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/security/AuthProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/security/AuthProviderImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/web/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/security/handler/LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/security/handler/LoginSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/auth/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/auth/addUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/MyUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/detailsService/MyUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/auth/addUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/addUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/editPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/editPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/users.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/META-INF/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/DAO/JpaUserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/DAO/UserDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/config/AppInit.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/config/HibernateConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/controller/CRUDcontroller.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/controller/UserController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/controller/authController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/model/Role.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/repository/RoleRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/repository/UserRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/security/AuthProviderImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/security/SecurityConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/security/SpringSecurityInitializer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/security/handler/LoginSuccessHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/service/UserServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/service/MyUserDetailService.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/lib/aspectjrt-1.9.6.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/lib/attoparser-2.0.4.RELEASE.jar" beforeDir="false" />
@@ -81,28 +80,28 @@
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/lib/thymeleaf-3.0.9.RELEASE.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/lib/thymeleaf-spring5-3.0.9.RELEASE.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/lib/unbescape-1.1.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/pages/auth/addUser.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/pages/auth/hello.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/pages/auth/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/pages/auth/sign_up.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/pages/editPage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/pages/userProfile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/pages/userPage.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/pages/users.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/web/DAO/JpaUserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/web/DAO/UserDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/config/AppInit.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/config/HibernateConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/controller/CRUDcontroller.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/controller/UserController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/controller/authController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/model/Role.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/repository/RoleRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/repository/UserRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/security/AuthProviderImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/security/SecurityConfig.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/security/SpringSecurityInitializer.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/web/security/handler/LoginSuccessHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/web/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/web/service/UserServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/service/MyUserDetailService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,9 +111,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -167,6 +166,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\khaly\IdeaProjects\pre-project2.4.2\src\webapp\WEB-INF\pages" />
       <recent name="C:\Users\khaly\IdeaProjects\pre-project2.4.2\src\webapp\WEB-INF\pages\auth" />
       <recent name="C:\Users\khaly\IdeaProjects\pre-project2.3.1Entity\src\webapp\WEB-INF\pages" />
     </key>
@@ -279,6 +279,7 @@
       <workItem from="1620851496180" duration="6814000" />
       <workItem from="1620894891607" duration="20334000" />
       <workItem from="1620920558820" duration="12685000" />
+      <workItem from="1621156769634" duration="14679000" />
     </task>
     <task id="LOCAL-00001" summary="change session to entity">
       <created>1620815907082</created>
@@ -359,24 +360,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/web/controller/authController.java</url>
-          <line>21</line>
+          <line>27</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/web/detailsService/MyUserDetailService.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/web/security/AuthProviderImpl.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/web/detailsService/MyUserDetailService.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -385,6 +391,11 @@
         <PinnedItemInfo parentTag="web.controller.CRUDcontroller" memberName="userService" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="((UsernamePasswordAuthenticationToken)authentication).authenticated" custom="org.springframework.security.authentication.UsernamePasswordAuthenticationToken" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pre_project2_3_1Entity$Tomcat_9_0_45.ic" NAME="Tomcat 9.0.45 Coverage Results" MODIFIED="1620767882974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

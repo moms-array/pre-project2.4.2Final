@@ -1,28 +1,32 @@
 package web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import web.model.User;
-import web.service.MyUserDetailService;
+import web.detailsService.MyUserDetailService;
+import web.service.UserDetailsService;
+import web.service.UserService;
 
 @Controller
 @RequestMapping("/user")
 public class UserController {
 
-    @Autowired
-    private MyUserDetailService userService;
 
+    private UserService userService;
+
+    @Autowired
+    public void setUserService(UserDetailsService userService) {
+        this.userService = userService;
+    }
     @GetMapping(value = "/userPage")
     public ModelAndView getUserPage(){
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        User user =  userService.findByUsername(auth.getName());
+        User user =  userService.findByUserName(auth.getName());
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("userPage");
         modelAndView.addObject("user", user);

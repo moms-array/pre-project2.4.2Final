@@ -7,7 +7,7 @@
 </head>
 <body>
 <div>
-  <form th:method="POST" th:action="@{/edit}" th:object="${user}">
+  <form method="POST" action="/admin/edit" th:object="${user}">
 
       <label for = "id"></label>
       <input type="hidden" th:field = "*{id}" id = "id"/>
@@ -28,8 +28,6 @@
       <input type="text" th:field = "*{password}" id = "password"/>
       </br>
 
-      <label for ="roles">Enter role</label>
-      <input type="text" th:field = "*{roles}" id = "roles"/>
       <input type="submit" value="update!"/>
 
   </form>

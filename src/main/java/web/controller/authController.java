@@ -5,7 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import web.service.MyUserDetailService;
+import web.detailsService.MyUserDetailService;
+import web.service.UserDetailsService;
+import web.service.UserService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +15,13 @@ import java.util.List;
 @Controller
 public class authController {
 
-    @Autowired
-    private MyUserDetailService userService;
 
+    private UserService userService;
+
+    @Autowired
+    public void setUserService(UserDetailsService userService) {
+        this.userService = userService;
+    }
     authController(){
     }
 

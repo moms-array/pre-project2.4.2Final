@@ -10,7 +10,10 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+import web.model.Role;
 import web.model.User;
+import web.repository.RoleRepository;
 import web.repository.UserRepository;
 
 import java.util.*;
@@ -18,13 +21,19 @@ import java.util.*;
 @Component
 public class AuthProviderImpl implements AuthenticationProvider {
 
-    @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    public void setUserRepository(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
     @Override
+    @Transactional
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String username = authentication.getName();
         User user = userRepository.findByUsername(username);
+
         if (user == null){
             throw new UsernameNotFoundException("user not found");
         }

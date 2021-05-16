@@ -1,21 +1,25 @@
 package web.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import web.model.User;
-import web.service.MyUserDetailService;
 import org.springframework.stereotype.Controller;
+import web.service.UserDetailsService;
+import web.service.UserService;
 
 @Controller
 @RequestMapping("/admin")
 public class CRUDcontroller {
 
+    private UserService userService;
+
     @Autowired
-    private MyUserDetailService userService;
+    public void setUserService(UserDetailsService userService) {
+        this.userService = userService;
+    }
 
     CRUDcontroller(){
     }
@@ -40,7 +44,7 @@ public class CRUDcontroller {
     @PostMapping(value = "/edit")
     public ModelAndView editUser(@ModelAttribute("user") User user){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("redirect:/users");
+        modelAndView.setViewName("redirect:/admin/users");
         userService.saveUser(user);
         return modelAndView;
     }
@@ -49,7 +53,7 @@ public class CRUDcontroller {
     public ModelAndView addPage(){
         ModelAndView modelAndView = new ModelAndView();
         User user = new User();
-        modelAndView.setViewName("auth/addUser");
+        modelAndView.setViewName("addUser");
         modelAndView.addObject(user);
         return modelAndView;
     }
@@ -57,7 +61,7 @@ public class CRUDcontroller {
     @PostMapping(value = "/add")
     public ModelAndView addUser(@ModelAttribute("user") User user){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("redirect:/users");
+        modelAndView.setViewName("redirect:/admin/users");
         userService.addUser(user);
         return modelAndView;
     }
@@ -65,7 +69,7 @@ public class CRUDcontroller {
     @GetMapping(value = "/delete/{id}")
     public ModelAndView deleteUser(@PathVariable("id") Long id){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("redirect:/users");
+        modelAndView.setViewName("redirect:/admin/users");
         User user = userService.findUserById(id);
         userService.deleteUser(user.getId());
         return modelAndView;
