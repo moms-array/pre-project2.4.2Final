@@ -3,13 +3,12 @@ package web.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import web.model.User;
-import web.detailsService.MyUserDetailService;
-import web.service.UserDetailsService;
 import web.service.UserService;
 
 @Controller
@@ -20,7 +19,7 @@ public class UserController {
     private UserService userService;
 
     @Autowired
-    public void setUserService(UserDetailsService userService) {
+    public void setUserService(UserService userService) {
         this.userService = userService;
     }
     @GetMapping(value = "/userPage")

@@ -1,6 +1,8 @@
 package web.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import web.security.MyUserDetailService;
 import web.model.User;
 
 import java.util.List;
@@ -8,33 +10,40 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
+    MyUserDetailService myUserDetailService;
+
+    @Autowired
+    public void setMyUserDetailService(MyUserDetailService myUserDetailService) {
+        this.myUserDetailService = myUserDetailService;
+    }
+
     @Override
     public User findUserById(Long id) {
-        return null;
+        return myUserDetailService.findUserById(id);
     }
 
     @Override
     public boolean saveUser(User user) {
-        return false;
+        return myUserDetailService.saveUser(user);
     }
 
     @Override
     public boolean deleteUser(Long id) {
-        return false;
+        return myUserDetailService.deleteUser(id);
     }
 
     @Override
     public List<User> userList() {
-        return null;
+        return myUserDetailService.userList();
     }
 
     @Override
     public void addUser(User user) {
-
+        myUserDetailService.addUser(user);
     }
 
     @Override
     public User findByUserName(String name) {
-        return null;
+        return myUserDetailService.findByUsername(name);
     }
 }

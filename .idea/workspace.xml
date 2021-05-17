@@ -11,6 +11,29 @@
   <component name="ChangeListManager">
     <list default="true" id="41f1c335-3789-4504-9e49-0161fd5659d1" name="Default Changelist" comment="удалил EntityManager em;&#10;вынес UserDetailsService userService в отдельную директорию;&#10;заменил Eager на Lazyб добавил к @EnableTransactionManager(proxyTargetClass = true), добавил аннотацию у метода Authentication authentication @Transactional&#10;Добавил интерфейс UserService и через него вызвал MyUserDetailService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/controller/authController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/controller/authController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/detailsService/MyUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/security/MyUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/UserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/controller/CRUDcontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/controller/CRUDcontroller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/controller/authController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/controller/authController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/detailsService/MyUserDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/security/AuthProviderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/security/AuthProviderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/service/UserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/2.2.2.Spring_MVC/WEB-INF/classes/web/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/controller/CRUDcontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/controller/CRUDcontroller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/controller/authController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/controller/authController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/detailsService/MyUserDetailService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/security/AuthProviderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/security/AuthProviderImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/service/UserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/service/UserServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,6 +212,8 @@
       <workItem from="1620894891607" duration="20334000" />
       <workItem from="1620920558820" duration="12685000" />
       <workItem from="1621156769634" duration="16123000" />
+      <workItem from="1621249087766" duration="259000" />
+      <workItem from="1621257016662" duration="653000" />
     </task>
     <task id="LOCAL-00001" summary="change session to entity">
       <created>1620815907082</created>
@@ -246,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621173231660</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="удалил EntityManager em;&#10;вынес UserDetailsService userService в отдельную директорию;&#10;заменил Eager на Lazyб добавил к @EnableTransactionManager(proxyTargetClass = true), добавил аннотацию у метода Authentication authentication @Transactional&#10;Добавил интерфейс UserService и через него вызвал MyUserDetailService">
+      <created>1621249229471</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1621249229471</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,16 +310,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/web/controller/authController.java</url>
-          <line>27</line>
+          <line>25</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/web/controller/CRUDcontroller.java</url>
-          <line>45</line>
+          <line>43</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/web/detailsService/MyUserDetailService.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/web/security/MyUserDetailService.java</url>
           <line>42</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
@@ -297,7 +329,7 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/web/detailsService/MyUserDetailService.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/web/security/MyUserDetailService.java</url>
           <line>27</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
