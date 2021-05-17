@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        table th, table td {padding: 5px;}
+    </style>
+</head>
+<body>
+    <h1>Users</h1>
+
+    <table border = "1">
+
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>lastname</th>
+            <th>email</th>
+            <th>password</th>
+            <th>edit</th>
+            <th>delete</th>
+        </tr>
+
+        <tr th:each="user, state: ${users}">
+            <td th:text="${user.id}">id</td>
+            <td th:text="${user.username}">name</td>
+            <td th:text="${user.lastname}">lastname</td>
+            <td th:text="${user.email}">email</td>
+            <td th:text="${user.password}">password</td>
+            <td><a th:href="@{/admin/edit/{id}(id = ${user.getId()})}"> edit </a>  </td>
+            <td><a th:href="@{/admin/delete/{id}(id = ${user.getId()})}" >delete</a> </td>
+        </tr>
+    </table>
+    <a href="/admin/add">add user</a>
+    </br>
+    <a href="/logout">logout</a>
+</body>
+</html>
